@@ -1,0 +1,4 @@
+<root>   ::= <branch> EOF
+<branch> ::= "{" [ <stem> ] [ <branch> ] "|" [ <stem> ] [ <branch> ] "}"
+<stem>   ::= "+" | "-" | <graft>
+<graft>  ::= "(" <stem> <branch> ")"
